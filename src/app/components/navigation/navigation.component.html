@@ -1,0 +1,11 @@
+<nav class="navigation">
+  <ul class="navigation__list">
+    @for (option of navOptions(); track option.title) {
+      <li class="navigation__list-element rounded-border-bottom">
+        <a (click)="scrollTo(option.id)" class="navigation__list-element--link">{{
+          option.title
+        }}</a>
+      </li>
+    }
+  </ul>
+</nav>

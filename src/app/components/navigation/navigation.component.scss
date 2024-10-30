@@ -1,9 +1,11 @@
 :host {
-  background-color: inherit;
+  background-color: white;
   position: sticky;
+  display: block;
   top: 0;
 }
 .navigation {
+  border-bottom: solid 1px #d4dbe8;
   &__list {
     display: flex;
     align-items: center;
@@ -17,6 +19,7 @@
       display: none;
     }
     &-element {
+      cursor: pointer;
       white-space: nowrap;
       padding: 0.5rem 0.25rem;
       &:first-of-type {
@@ -24,15 +27,20 @@
       }
       &.rounded-border-bottom {
         position: relative;
-        &:hover::after {
+        &::after {
           content: '';
           position: absolute;
           bottom: 0;
           left: 0;
-          width: 100%;
+          width: 0;
           height: 3px;
-          background-color: #000;
+          background: linear-gradient(90deg, #9b27ff, #ff4bcd);
           border-radius: 10px 10px 10px 10px;
+          transition: width 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+          width: 100%;
         }
       }
       &--link {

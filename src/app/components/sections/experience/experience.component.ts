@@ -11,4 +11,6 @@ import { ExperienceCardComponent } from './components/experience-card/experience
 })
 export class ExperienceComponent {
   id: InputSignal<string> = input.required<string>();
+
+  fakeArray = Array.from({ length: 5 });
 }

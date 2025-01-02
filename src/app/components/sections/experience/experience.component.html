@@ -1,4 +1,6 @@
 <section [id]="id()">
   <h2 class="section__title">Experiencia</h2>
-  <app-experience-card />
+  @for (card of fakeArray; let index = $index; track index) {
+    <app-experience-card />
+  }
 </section>

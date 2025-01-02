@@ -4,6 +4,12 @@
 */
 
 html,
+body {
+  touch-action: manipulation;
+  overscroll-behavior: none;
+}
+
+html,
 body,
 div,
 span,

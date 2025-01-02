@@ -8,12 +8,11 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-navigation',
-  standalone: true,
-  imports: [],
-  templateUrl: './navigation.component.html',
-  styleUrl: './navigation.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-navigation',
+    imports: [],
+    templateUrl: './navigation.component.html',
+    styleUrl: './navigation.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavigationComponent {
   #renderer: Renderer2 = inject(Renderer2);

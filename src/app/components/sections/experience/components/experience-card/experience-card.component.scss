@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 0.25rem;
+}
+.fake_image {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+.experience-description {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-weight: 500;
+  }
+  &__info {
+    color: #292921;
+  }
+}

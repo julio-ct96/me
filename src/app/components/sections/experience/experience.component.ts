@@ -2,11 +2,11 @@ import { ChangeDetectionStrategy, Component, input, InputSignal } from '@angular
 import { ExperienceCardComponent } from './components/experience-card/experience-card.component';
 
 @Component({
-    selector: 'app-experience',
-    imports: [],
-    templateUrl: './experience.component.html',
-    styleUrl: './experience.component.scss',
-    changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-experience',
+  imports: [ExperienceCardComponent],
+  templateUrl: './experience.component.html',
+  styleUrl: './experience.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExperienceComponent {
   id: InputSignal<string> = input.required<string>();

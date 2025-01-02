@@ -10,16 +10,15 @@ import { ArticlesComponent } from './components/sections/articles/articles.compo
 import { ExperienceComponent } from './components/sections/experience/experience.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    ProfileSummaryComponent,
-    NavigationComponent,
-    NgComponentOutlet,
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [
+        RouterOutlet,
+        ProfileSummaryComponent,
+        NavigationComponent,
+        NgComponentOutlet,
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'me';
